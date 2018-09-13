@@ -70,38 +70,6 @@ The result should look like this:
 
 ![train](doc_files/train.png "train")
 
-### Transfer learning with pre-trained embeddings:
-Docs coming soon...
-
-## Visualizing a model in TensorBoard
-[TensorBoard](https://www.tensorflow.org/programmers_guide/summaries_and_tensorboard) is a great tool for visualizing what is going on under the hood when a TensorFlow model is being trained.
-
-To start TensorBoard from a terminal:
-```shell
-tensorboard --logdir=model_dir
-```
-
-Where model_dir is the path to the directory where the model checkpoint file is. For example, to view the trained cornell movie dialog model **trained_model_v2**:
-```shell
-tensorboard --logdir=models\cornell_movie_dialog\trained_model_v2
-```
-
-### Visualize Training
-Docs coming soon...
-
-### Visualize model graph
-Docs coming soon...
-
-### Visualize word embeddings
-TensorBoard can project the word embeddings into 3D space by performing a dimensionality reduction technique like PCA or T-SNE, and can allow you to explore how your model has grouped together the words in your vocabulary by viewing nearest neighbors in the embedding space for any word.
-More about word embeddings in TensorFlow and the TensorBoard projector can be found [here](https://www.tensorflow.org/programmers_guide/embedding).
-
-When launching TensorBoard for a model directory and selecting the "Projector" tab, it should look like this:
-![train](doc_files/tensorboard_projector.png "train")
-
-## Adding a new dataset
-Instructions coming soon...
-
 ## Dependencies
 The following python packages are used in seq2seq-chatbot:
 (excluding packages that come with Anaconda)
